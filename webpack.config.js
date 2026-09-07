@@ -30,7 +30,15 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: [/node_modules/, /\.global\.scss$/],
-        use: ['to-string-loader', 'style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'to-string-loader',
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: { api: 'modern' },
+          },
+        ],
       },
       { test: /\.pug$/, use: ['apply-loader', 'pug-loader'] },
     ]
