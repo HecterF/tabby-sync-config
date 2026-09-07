@@ -57,7 +57,7 @@
     "winston": "^3.3.3"
   },
   "peerDependencies": {
-    "@angular/core": "^4.0.1"
+    "@angular/core": ">=7.2.8"
   },
   "repository": "starxg/terminus-sync-config",
   "dependencies": {
